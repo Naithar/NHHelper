@@ -7,6 +7,7 @@
 //
 
 #import "NViewController.h"
+#import <NHHelper.h>
 
 @interface NViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    self.view.backgroundColor = hex(0x5236ce);
 }
 
 - (void)didReceiveMemoryWarning
