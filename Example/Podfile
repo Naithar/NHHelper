@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'NHHelper', :exclusive => true do
+  pod "NHHelper", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "NHHelper", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
