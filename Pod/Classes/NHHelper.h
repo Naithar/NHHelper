@@ -31,6 +31,11 @@ alpha:alpha]
 #define as(instance, Type) \
 ((Type*)([instance isKindOfClass:[Type class]] ? instance : nil))
 
+#define isNSNull(x) \
+([x isKindOfClass:[NSNull class]])
+
+#define ifNSNull(x, y) \
+([x isKindOfClass:[NSNull class]]) ? y : (x ?: y)
 
 #define IS_IPAD   ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
 #define IS_IPHONE ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
